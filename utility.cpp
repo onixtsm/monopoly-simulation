@@ -30,7 +30,7 @@ void do_nothing(uint8_t *position) { return; }
 
 uint8_t dice_toss(uint8_t amount) {
   if (amount == 0) {
-    return 1;
+    return 0;
   }
-  return ((std::rand() + 1) % 6) * dice_toss(--amount);  // dice has 6 faces;
+  return ((std::rand()) % 6 + 1)+ dice_toss(--amount);  // dice has 6 faces;
 }
