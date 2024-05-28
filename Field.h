@@ -10,7 +10,7 @@ class Field {
   uint64_t cost;
   uint64_t revenue = 0;
   uint64_t visits = 0;
-  static uint8_t index;
+  static int index;
 
  public:
   Field();
@@ -18,10 +18,12 @@ class Field {
   virtual void action(uint8_t *position) {
     add_visit();
   };
+
   void add_visit(void); 
   virtual ~Field();
   uint64_t getVisits(void) const;
-  uint8_t my_index = index - 40;
+  uint64_t getRevenue(void) const;
+  int my_index = index;
 };
 
 #endif

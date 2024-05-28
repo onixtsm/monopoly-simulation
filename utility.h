@@ -2,8 +2,8 @@
 #define UTILITY_H_
 #include <cinttypes>
 
-#define JAIL 9
-#define START 10
+#define JAIL 10
+#define START 0
 #define ILLINOIS 24
 #define LIGHT 12
 #define WATER 28

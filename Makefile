@@ -1,6 +1,6 @@
 SOURCES=$(wildcard *.cpp)
 OBJ=$(SOURCES:.cpp=.o )
-CFLAGS=-O3 -ggdb
+CFLAGS=-ggdb
 
 %.o:%.c
 	$(CXX) -c $@ $^
